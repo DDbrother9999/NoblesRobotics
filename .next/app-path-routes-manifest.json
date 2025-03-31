@@ -1,0 +1,7 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/about-us/page": "/about-us",
+  "/page": "/",
+  "/accomplishments/[year]/page": "/accomplishments/[year]",
+  "/sponsors/page": "/sponsors"
+}
