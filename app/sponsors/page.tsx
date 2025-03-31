@@ -12,52 +12,10 @@ export default function SponsorsPage() {
   const sponsors: Sponsor[] = [
     {
       id: 1,
-      name: "TechCorp Industries",
+      name: "Example",
       tier: "platinum",
       imageSrc: "/placeholder.svg?height=300&width=300",
-      website: "https://example.com/techcorp",
-    },
-    {
-      id: 2,
-      name: "InnovateTech Solutions",
-      tier: "gold",
-      imageSrc: "/placeholder.svg?height=300&width=300",
-      website: "https://example.com/innovatetech",
-    },
-    {
-      id: 3,
-      name: "Future Foundation",
-      tier: "gold",
-      imageSrc: "/placeholder.svg?height=300&width=300",
-      website: "https://example.com/futurefoundation",
-    },
-    {
-      id: 4,
-      name: "Precision Engineering",
-      tier: "silver",
-      imageSrc: "/placeholder.svg?height=300&width=300",
-      website: "https://example.com/precision",
-    },
-    {
-      id: 5,
-      name: "Community Bank",
-      tier: "silver",
-      imageSrc: "/placeholder.svg?height=300&width=300",
-      website: "https://example.com/communitybank",
-    },
-    {
-      id: 6,
-      name: "Local Machine Shop",
-      tier: "bronze",
-      imageSrc: "/placeholder.svg?height=300&width=300",
-      website: "https://example.com/machineshop",
-    },
-    {
-      id: 7,
-      name: "Digital Solutions Inc.",
-      tier: "bronze",
-      imageSrc: "/placeholder.svg?height=300&width=300",
-      website: "https://example.com/digitalsolutions",
+      website: "#",
     },
   ]
 
@@ -141,16 +99,25 @@ export default function SponsorsPage() {
         {/* Donation Website Embed Section */}
         <section className="mb-16 bg-white rounded-lg shadow-lg p-8">
           <h2 className="text-2xl font-bold text-[#044a90] mb-6 text-center">Support Our Team</h2>
-          <div className="aspect-video w-full max-w-3xl mx-auto bg-[#f5faff] rounded-lg flex items-center justify-center">
-            {/* Donation website embed would go here */}
-            <div className="text-center p-8">
+          <div className="w-full max-w-3xl mx-auto bg-[#f5faff] rounded-lg min-h-[900px]">
+            <iframe
+                src="https://hcb.hackclub.com/donations/start/nobles-robotics"
+                className="w-full min-h-[900px] border-none"
+                frameBorder="0"
+                allowFullScreen
+            ></iframe>
+          </div>
+        </section>
+
+
+
+{/*            <div className="text-center p-8">
               <p className="text-[#0e6fb9] mb-4">Donation website embed placeholder</p>
               <p className="text-sm text-[#0e6fb9]">
                 This is where you would embed your donation platform of choice (e.g., GoFundMe, PayPal, etc.)
               </p>
-            </div>
-          </div>
-        </section>
+            </div>*/}
+
       </div>
     </main>
   )

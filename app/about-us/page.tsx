@@ -12,102 +12,78 @@ export default function AboutUs() {
   const mentors: TeamMember[] = [
     {
       id: 1,
-      name: "Jane Smith",
-      role: "Lead Mentor",
+      name: "Max Montgomery",
+      role: "Faculty Mentor",
       description:
-        "Jane has over 15 years of experience in the field and has been mentoring teams for the past 8 years. She specializes in strategy development and team leadership.",
-      imageSrc: "/placeholder.svg?height=400&width=400",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      imageSrc: "/team/2024-2025/mentors/Montgomery.jpg?height=400&width=400",
     },
     {
       id: 2,
-      name: "John Doe",
-      role: "Technical Mentor",
+      name: "Andrew Shumway",
+      role: "Faculty Mentor",
       description:
-        "John brings 12 years of technical expertise to the team. He guides students through complex technical challenges and helps them develop innovative solutions.",
-      imageSrc: "/placeholder.svg?height=400&width=400",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      imageSrc: "/team/2024-2025/mentors/Shumway.jpg?height=400&width=400",
     },
   ]
 
   const students: TeamMember[] = [
     {
       id: 1,
-      name: "Alex Johnson",
+      name: "Jeffrey Liu",
       role: "Team Captain",
       description:
-        "Alex leads the team with enthusiasm and dedication. Their strategic thinking and problem-solving skills have been instrumental to the team's success.",
-      imageSrc: "/placeholder.svg?height=400&width=400",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      imageSrc: "/team/2024-2025/students/JEFFREY_LIU.jpg?height=400&width=400",
     },
     {
       id: 2,
-      name: "Sam Williams",
-      role: "Technical Lead",
+      name: "George Pinkas",
+      role: "Hardware",
       description:
-        "Sam oversees the technical aspects of our projects. Their innovative approach and attention to detail ensure our solutions are both creative and reliable.",
-      imageSrc: "/placeholder.svg?height=400&width=400",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      imageSrc: "/team/2024-2025/students/GEORGE_PINKAS.jpg?height=400&width=400",
     },
     {
       id: 3,
-      name: "Taylor Brown",
-      role: "Design Specialist",
+      name: "Derek Yin",
+      role: "Software",
       description:
-        "Taylor brings creative vision to our projects. Their design skills and aesthetic sensibility help our work stand out from the crowd.",
-      imageSrc: "/placeholder.svg?height=400&width=400",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      imageSrc: "/team/2024-2025/students/DEREK_YIN.jpg?height=400&width=400",
     },
     {
       id: 4,
-      name: "Jordan Lee",
-      role: "Programming Expert",
+      name: "Alex Cai",
+      role: "Hardware",
       description:
-        "Jordan excels in coding and software development. Their ability to write efficient code and solve complex problems is a valuable asset to the team.",
-      imageSrc: "/placeholder.svg?height=400&width=400",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      imageSrc: "/team/2024-2025/students/ALEX_CAI.jpg?height=400&width=400",
     },
     {
       id: 5,
-      name: "Casey Martinez",
-      role: "Research Analyst",
+      name: "Raphael Klauber",
+      role: "Hardware",
       description:
-        "Casey conducts thorough research to inform our projects. Their analytical skills and attention to detail provide a solid foundation for our work.",
-      imageSrc: "/placeholder.svg?height=400&width=400",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      imageSrc: "/team/2024-2025/students/RAPHAEL_KLAUBER.jpg?height=400&width=400",
     },
     {
       id: 6,
-      name: "Riley Wilson",
-      role: "Communications Specialist",
+      name: "Jayden Leung",
+      role: "Documentation",
       description:
-        "Riley manages our team's communications and presentations. Their excellent communication skills help us effectively share our ideas and achievements.",
-      imageSrc: "/placeholder.svg?height=400&width=400",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      imageSrc: "/team/2024-2025/students/JAYDEN_LEUNG.jpg?height=400&width=400",
     },
     {
       id: 7,
-      name: "Morgan Garcia",
-      role: "Project Manager",
+      name: "Kenny Chukwu",
+      role: "Software",
       description:
-        "Morgan keeps our projects on track and ensures we meet our deadlines. Their organizational skills and leadership are essential to our success.",
-      imageSrc: "/placeholder.svg?height=400&width=400",
-    },
-    {
-      id: 8,
-      name: "Avery Thomas",
-      role: "Hardware Specialist",
-      description:
-        "Avery works on the physical components of our projects. Their hands-on skills and technical knowledge bring our ideas to life.",
-      imageSrc: "/placeholder.svg?height=400&width=400",
-    },
-    {
-      id: 9,
-      name: "Quinn Robinson",
-      role: "Data Analyst",
-      description:
-        "Quinn analyzes data to inform our decision-making. Their statistical skills and logical thinking help us optimize our performance.",
-      imageSrc: "/placeholder.svg?height=400&width=400",
-    },
-    {
-      id: 10,
-      name: "Jamie Clark",
-      role: "Outreach Coordinator",
-      description:
-        "Jamie manages our relationships with sponsors and the community. Their networking skills and friendly demeanor help us build strong partnerships.",
-      imageSrc: "/placeholder.svg?height=400&width=400",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      imageSrc: "/team/2024-2025/students/JESSE_CHUKWU.jpg?height=400&width=400",
     },
   ]
 

@@ -61,28 +61,28 @@ export default function Home() {
       <section className="relative h-screen overflow-hidden">
         <div className={`absolute inset-0 transition-opacity duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}>
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="/robotics-homepage.jpg?height=1080&width=1920"
             alt="Team Hero Image"
             fill
             className="object-cover"
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#044a90]/80 flex items-end">
-          <div className="container mx-auto px-4 pb-16">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#044a90]/80 flex items-end pb-24 md:pb-32">
+          <div className="container mx-auto px-4">
             <motion.h1
-              className="text-4xl md:text-6xl font-bold text-[#f5faff] mb-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 20 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
+                className="text-4xl md:text-6xl font-bold text-[#f5faff] mb-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 20 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
             >
-              Team Name
+              Nobles Robotics
             </motion.h1>
             <motion.p
-              className="text-xl md:text-2xl text-[#f5faff] max-w-2xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 20 }}
-              transition={{ delay: 0.8, duration: 0.8 }}
+                className="text-xl md:text-2xl text-[#f5faff] max-w-2xl"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 20 }}
+                transition={{ delay: 0.8, duration: 0.8 }}
             >
               Innovating and achieving excellence in our field
             </motion.p>
@@ -112,7 +112,7 @@ export default function Home() {
             <Link href="/about-us">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full">
                 <div className="h-48 relative">
-                  <Image src="/placeholder.svg?height=400&width=600" alt="About Us" fill className="object-cover" />
+                  <Image src="/index/about-us.jpg?height=400&width=600" alt="About Us" fill className="object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-[#044a90] mb-2">About Us</h3>
@@ -128,7 +128,7 @@ export default function Home() {
               <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full">
                 <div className="h-48 relative">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/index/accomplishments.jpg?height=400&width=600"
                     alt="Accomplishments"
                     fill
                     className="object-cover"
@@ -145,7 +145,7 @@ export default function Home() {
             <Link href="/sponsors">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full">
                 <div className="h-48 relative">
-                  <Image src="/placeholder.svg?height=400&width=600" alt="Sponsors" fill className="object-cover" />
+                  <Image src="/index/sponsors.jpg?height=400&width=600" alt="Sponsors" fill className="object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-[#044a90] mb-2">Sponsors</h3>

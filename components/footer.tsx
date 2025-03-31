@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="flex flex-col items-center justify-start h-full">
               {/* Team Logo */}
               <div className="relative w-40 h-40 mb-4">
-                <Image src="/placeholder.svg?height=200&width=200" alt="Team Logo" fill className="object-contain" />
+                <Image src="/logo.svg?height=200&width=200" alt="Team Logo" fill className="object-contain" />
               </div>
 
               <div className="mt-2 text-center">
@@ -62,13 +62,13 @@ export default function Footer() {
                 >
                   <Mail size={24} />
                 </a>
-                <a href="#" className="hover:text-[#90e0f4] transition-colors" aria-label="Instagram">
+                <a href="https://www.instagram.com/noblesrobotics/" className="hover:text-[#90e0f4] transition-colors" aria-label="Instagram">
                   <Instagram size={24} />
                 </a>
-                <a href="#" className="hover:text-[#90e0f4] transition-colors" aria-label="GitHub">
+                <a href="https://github.com/Nobles-Robotics" className="hover:text-[#90e0f4] transition-colors" aria-label="GitHub">
                   <Github size={24} />
                 </a>
-                <a href="#" className="hover:text-[#90e0f4] transition-colors" aria-label="YouTube">
+                <a href="https://www.youtube.com/@NoblesRobotics" className="hover:text-[#90e0f4] transition-colors" aria-label="YouTube">
                   <Youtube size={24} />
                 </a>
               </div>

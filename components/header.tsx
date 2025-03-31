@@ -23,8 +23,8 @@ export default function Header() {
             {/* Team Logo/Image on the left */}
             <div className="relative w-10 h-10 mr-3">
               <Image
-                src="/placeholder.svg?height=40&width=40"
-                alt="Team Logo"
+                src="/logo.svg?height=40&width=40"
+                alt="Nobles Robotics"
                 width={40}
                 height={40}
                 className="object-contain"
@@ -33,7 +33,7 @@ export default function Header() {
 
             {/* Team Name */}
             <Link href="/" onClick={handleNavClick} className="text-2xl font-bold">
-              Team Logo
+              Nobles Robotics
             </Link>
           </div>
 
