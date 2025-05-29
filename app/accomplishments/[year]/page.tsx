@@ -34,17 +34,17 @@ export default function AccomplishmentsPage() {
       setAccomplishments([
         {
           id: 1,
-          title: "Regional Competition Winner",
-          date: "October 2023",
+          title: "Control Award",
+          date: "2021-2022 Season",
           description:
-            "Our team won first place at the regional competition, showcasing our innovative solution to the challenge.",
+            "For our first award, we won the Control Award for our innovative robot design and programming.",
           images: ["/placeholder.svg?height=400&width=600", "/placeholder.svg?height=400&width=600"],
         },
         {
           id: 2,
-          title: "Innovation Award",
-          date: "December 2023",
-          description: "Received the Innovation Award for our unique approach to solving complex problems.",
+          title: "Regional Qualifier - Winning Alliance",
+          date: "2021-2022 Season",
+          description: "We won the regional qualifier, securing our spot in the state championship in the 2021-2022 season.",
           images: [
             "/placeholder.svg?height=400&width=600",
             "/placeholder.svg?height=400&width=600",
@@ -54,24 +54,24 @@ export default function AccomplishmentsPage() {
         },
         {
           id: 3,
-          title: "National Finals Qualification",
-          date: "February 2024",
-          description: "Qualified for the national finals, representing our region among the top teams in the country.",
+          title: "Control Award",
+          date: "2022-2023 Season",
+          description: "We won the Control Award for our innovative robot design and programming.",
           images: ["/placeholder.svg?height=400&width=600"],
         },
         {
           id: 4,
-          title: "Community Outreach Project",
-          date: "March 2024",
+          title: "Control Award",
+          date: "2022-2023 Season",
           description:
-            "Launched a successful community outreach project, sharing our knowledge and inspiring the next generation.",
+            "We won a second Control Award during the 2022-2023 season for our innovative robot design and programming.",
           images: ["/placeholder.svg?height=400&width=600", "/placeholder.svg?height=400&width=600"],
         },
         {
           id: 5,
-          title: "National Championship - 3rd Place",
-          date: "April 2024",
-          description: "Secured 3rd place at the National Championship, our best performance to date.",
+          title: "Regional Qualifier - Finalist Alliance",
+          date: "2022-2023 Season",
+          description: "Though we did not qualify for the state tournament this year, our robot performed its best, placing us on the finalist alliance.",
           images: ["/placeholder.svg?height=400&width=600"],
         },
       ])
@@ -106,22 +106,18 @@ export default function AccomplishmentsPage() {
         },
         {
           id: 2,
-          title: "Technical Excellence Award",
+          title: "FTC Think Award",
           date: "November 2024",
           description: "Recognized for technical excellence at the fall showcase event.",
           images: ["/placeholder.svg?height=400&width=600", "/placeholder.svg?height=400&width=600"],
         },
         {
           id: 3,
-          title: "Regional Competition - 1st Place",
+          title: "FTC Control Award",
           date: "January 2025",
           description:
             "Defended our regional title with another first-place finish, demonstrating our continued growth and improvement.",
-          images: [
-            "/placeholder.svg?height=400&width=600",
-            "/placeholder.svg?height=400&width=600",
-            "/placeholder.svg?height=400&width=600",
-          ],
+          images: ["/control_award_24_25.JPG?height=400&width=600"],
         },
         {
           id: 4,
