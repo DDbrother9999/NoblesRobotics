@@ -1,14 +1,11 @@
 "use client"
 
-
-
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { ChevronDown, ChevronUp } from "lucide-react"
 
-// FAQ type
 type FAQ = {
   question: string
   answer: string
@@ -18,32 +15,10 @@ export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
   const [openFAQ, setOpenFAQ] = useState<number | null>(null)
 
-  // Sample FAQs
   const faqs: FAQ[] = [
     {
-      question: "What is robotics?",
-      answer:
-        "Robotics is an interdisciplinary field that integrates computer science, engineering, and technology to design, build, and operate robots. Our team focuses on competitive robotics, where we design and build robots to compete in specific challenges against other teams.",
-    },
-    {
-      question: "How can I join the team?",
-      answer:
-        "We welcome new members at the beginning of each school year. No prior experience is necessary - just enthusiasm and a willingness to learn! Contact us at noblesrobotics@gmail.com for more information about joining.",
-    },
-    {
-      question: "What competitions do you participate in?",
-      answer:
-        "We participate in several robotics competitions throughout the year, including regional and national events. Our main competition is [Competition Name], which challenges teams to design, build, and program robots to complete specific tasks.",
-    },
-    {
-      question: "Do I need prior experience to join?",
-      answer:
-        "No prior experience is required! We have team members with various levels of experience, and we provide training and mentorship for new members. We value enthusiasm, dedication, and a willingness to learn.",
-    },
-    {
-      question: "How much time commitment is required?",
-      answer:
-        "During the build season (typically January through March), we meet several times a week after school and on weekends. Outside of the build season, we meet less frequently. The exact schedule varies based on competition deadlines and team needs.",
+      question: "What is FTC Robotics?",
+      answer: "First Tech Challenge (FTC) is a robotics competition for middle and high school students. Teams design, build, and program robots to compete in a series of challenges. Learn more about this years challenge here: <a href='https://www.firstinspires.org/robotics/ftc'>https://www.firstinspires.org/robotics/ftc</a>.",
     },
   ]
 
@@ -57,7 +32,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      {/* Hero Section with Animation - Full Screen Height */}
       <section className="relative h-screen overflow-hidden">
         <div className={`absolute inset-0 transition-opacity duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}>
           <Image
@@ -84,7 +58,7 @@ export default function Home() {
                 animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 20 }}
                 transition={{ delay: 0.8, duration: 0.8 }}
             >
-              Innovating and achieving excellence in our field
+              A High School Robotics Team in Dedham, Massachusetts
             </motion.p>
           </div>
         </div>
@@ -95,9 +69,9 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <blockquote className="text-center">
             <p className="text-2xl md:text-3xl italic text-[#044a90] mb-6">
-              "Success is not final, failure is not fatal: It is the courage to continue that counts."
+              "George your blurb goes here"
             </p>
-            <footer className="text-lg text-[#0e6fb9]">— Winston Churchill</footer>
+            <footer className="text-lg text-[#0e6fb9]">— George</footer>
           </blockquote>
         </div>
       </section>
@@ -108,7 +82,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center text-[#044a90] mb-12">Explore Our Journey</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* About Us Box */}
+            {/* About Us NavBox */}
             <Link href="/about-us">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full">
                 <div className="h-48 relative">
@@ -117,13 +91,13 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-[#044a90] mb-2">About Us</h3>
                   <p className="text-[#0e6fb9]">
-                    Meet our dedicated team of mentors and students working together to achieve greatness.
+                    Meet our team of students and mentors dedicated to learning more about robotics!
                   </p>
                 </div>
               </div>
             </Link>
 
-            {/* Accomplishments Box */}
+            {/* Accomplishments NavBox */}
             <Link href="/accomplishments/2023-2024">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full">
                 <div className="h-48 relative">
@@ -136,12 +110,12 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-[#044a90] mb-2">Accomplishments</h3>
-                  <p className="text-[#0e6fb9]">Explore our journey of achievements and milestones over the years.</p>
+                  <p className="text-[#0e6fb9]">Explore our accomplishments throughout the season!</p>
                 </div>
               </div>
             </Link>
 
-            {/* Sponsors Box */}
+            {/* Sponsors NavBox */}
             <Link href="/sponsors">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full">
                 <div className="h-48 relative">
@@ -150,7 +124,7 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-[#044a90] mb-2">Sponsors</h3>
                   <p className="text-[#0e6fb9]">
-                    Meet the organizations and individuals who support our mission and vision.
+                    Meet the organizations that support our team and help us achieve our goals!
                   </p>
                 </div>
               </div>
@@ -184,7 +158,10 @@ export default function Home() {
                     openFAQ === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
                   }`}
                 >
-                  <p className="text-[#0e6fb9]">{faq.answer}</p>
+                  <div
+                      className="text-[#0e6fb9]"
+                      dangerouslySetInnerHTML={{ __html: faq.answer }}
+                  />
                 </div>
               </div>
             ))}

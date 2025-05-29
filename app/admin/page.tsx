@@ -9,7 +9,6 @@ import CreateUserForm from "@/components/create-user-form"
 export default async function AdminPage() {
     const session = await getServerSession(authOptions)
 
-    // Check if user is authenticated and has admin role
     if (!session || session.user.role !== "admin") {
         redirect("/login")
     }
@@ -21,7 +20,6 @@ export default async function AdminPage() {
             <h1 className="text-3xl font-bold text-[#044a90] mb-8">Admin Dashboard</h1>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                {/* Create User Form */}
                 <div className="lg:col-span-1">
                     <Card>
                         <CardHeader>
@@ -34,7 +32,6 @@ export default async function AdminPage() {
                     </Card>
                 </div>
 
-                {/* Users List */}
                 <div className="lg:col-span-2">
                     <Card>
                         <CardHeader className="flex flex-row items-center justify-between">

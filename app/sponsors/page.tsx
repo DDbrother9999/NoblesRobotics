@@ -12,11 +12,18 @@ export default function SponsorsPage() {
   const sponsors: Sponsor[] = [
     {
       id: 1,
-      name: "Example",
+      name: "Your Company Name",
       tier: "platinum",
-      imageSrc: "/placeholder.svg?height=300&width=300",
-      website: "#",
+      imageSrc: "sponsors/logo-placeholder.png",
+      website: "sponsors",
     },
+    // {
+    //   id: 1,
+    //   name: "Example",
+    //   tier: "platinum",
+    //   imageSrc: "/placeholder.svg?height=300&width=300",
+    //   website: "#",
+    // },
   ]
 
   const tierColors = {
@@ -46,7 +53,7 @@ export default function SponsorsPage() {
 
         <section className="mb-12">
           <p className="text-lg text-[#0e6fb9] max-w-4xl mx-auto text-center mb-8">
-            We are grateful for the support of our sponsors who make our work possible.
+            Our robotics teams has many expenses from robot parts to registration fees. We are grateful for the support of our sponsors, who help make our participation in competitions possible.
           </p>
         </section>
 
@@ -58,6 +65,7 @@ export default function SponsorsPage() {
                 className={`rounded-lg shadow-lg overflow-hidden bg-white border-t-4 ${tierColors[sponsor.tier]}`}
               >
                 <div className="p-6 flex flex-col items-center">
+                  <h3 className="text-xl font-bold text-[#044a90] mb-1 text-center">{sponsor.name}</h3>
                   <div className="relative w-48 h-48 mb-4">
                     <Image
                       src={sponsor.imageSrc || "/placeholder.svg"}
@@ -66,7 +74,6 @@ export default function SponsorsPage() {
                       className="object-contain"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-[#044a90] mb-1 text-center">{sponsor.name}</h3>
                   <p className="text-[#0e6fb9] mb-4 text-center">{tierNames[sponsor.tier]}</p>
                   <a
                     href={sponsor.website}
@@ -96,28 +103,31 @@ export default function SponsorsPage() {
           </div>
         </section>
 
-        {/* Donation Website Embed Section */}
-        <section className="mb-16 bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-[#044a90] mb-6 text-center">Support Our Team</h2>
-          <div className="w-full max-w-3xl mx-auto bg-[#f5faff] rounded-lg min-h-[900px]">
-            <iframe
-                src="https://hcb.hackclub.com/donations/start/nobles-robotics"
-                className="w-full min-h-[900px] border-none"
-                frameBorder="0"
-                allowFullScreen
-            ></iframe>
+        {/*TODO: figure this out - prob should put "perks" here like listing them on our website / merch / if we host*/}
+        <section className="mb-16">
+          <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+            <h2 className="text-2xl font-bold text-[#044a90] mb-4">More Information Coming Soon</h2>
+            <p className="text-[#0e6fb9] text-lg">
+              Sponsorship tiers and details will be added here soon :)
+            </p>
           </div>
         </section>
 
+        {/*I'm not sure if it's appropriate to put this here: I'll leave this commented out for rn*/}
 
-
-{/*            <div className="text-center p-8">
-              <p className="text-[#0e6fb9] mb-4">Donation website embed placeholder</p>
-              <p className="text-sm text-[#0e6fb9]">
-                This is where you would embed your donation platform of choice (e.g., GoFundMe, PayPal, etc.)
-              </p>
-            </div>*/}
-
+        {/*/!* Donation Website Embed Section *!/*/}
+        {/*<section className="mb-16 bg-white rounded-lg shadow-lg p-8">*/}
+        {/*  <h2 className="text-2xl font-bold text-[#044a90] mb-6 text-center">Support Our Team</h2>*/}
+        {/*  <div className="w-full max-w-3xl mx-auto bg-[#f5faff] rounded-lg min-h-[900px]">*/}
+        {/*    There are many ways to support our team!*/}
+        {/*    <iframe*/}
+        {/*        src="https://hcb.hackclub.com/donations/start/nobles-robotics"*/}
+        {/*        className="w-full min-h-[900px] border-none"*/}
+        {/*        frameBorder="0"*/}
+        {/*        allowFullScreen*/}
+        {/*    ></iframe>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
       </div>
     </main>
   )

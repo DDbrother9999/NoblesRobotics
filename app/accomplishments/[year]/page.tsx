@@ -10,7 +10,7 @@ type Accomplishment = {
   title: string
   date: string
   description: string
-  images?: string[] // Changed to array of images
+  images?: string[]
   videoSrc?: string
 }
 
@@ -28,8 +28,6 @@ export default function AccomplishmentsPage() {
   const [robotImage, setRobotImage] = useState<string>("")
 
   useEffect(() => {
-    // In a real application, you would fetch this data from an API
-    // For now, we'll use mock data based on the year
     if (year === "2023-2024") {
       setAccomplishments([
         {
@@ -157,12 +155,10 @@ export default function AccomplishmentsPage() {
         <h1 className="text-4xl font-bold text-center text-[#044a90] mb-4">Accomplishments</h1>
         <h2 className="text-2xl font-bold text-center text-[#0e6fb9] mb-12">{year}</h2>
 
-        {/* At a Glance Section */}
         <section className="mb-16 bg-white rounded-lg shadow-lg p-8">
           <h3 className="text-2xl font-bold text-[#044a90] mb-6">At a Glance</h3>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Awards Gallery */}
             <div>
               <h4 className="text-xl font-bold text-[#0e6fb9] mb-4">Awards</h4>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -202,7 +198,7 @@ export default function AccomplishmentsPage() {
               description={accomplishment.description}
               images={accomplishment.images}
               videoSrc={accomplishment.videoSrc}
-              isLeft={index % 2 === 0} // Alternate sides
+              isLeft={index % 2 === 0}
               index={index}
             />
           ))}

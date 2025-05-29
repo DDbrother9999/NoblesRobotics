@@ -12,12 +12,10 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
     title: "Nobles Robotics",
-    description: "Official website for Nobles Robotics team",
+    description: "Nobles Robotics :)",
 }
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+export default function RootLayout({children,}: Readonly<{
     children: React.ReactNode
 }>) {
     return (

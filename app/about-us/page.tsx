@@ -31,49 +31,49 @@ export default function AboutUs() {
       id: 1,
       name: "Jeffrey Liu",
       role: "Team Captain",
-      description: "",
+      description: "Jeffrey is a junior at Nobles.",
       imageSrc: "/team/2024-2025/students/JEFFREY_LIU.jpg?height=400&width=400",
     },
     {
       id: 2,
       name: "George Pinkas",
       role: "Hardware",
-      description: "",
+      description: "George is a sophmore at Nobles.",
       imageSrc: "/team/2024-2025/students/GEORGE_PINKAS.jpg?height=400&width=400",
     },
     {
       id: 3,
       name: "Derek Yin",
       role: "Software",
-      description: "",
+      description: "Derek is a sophomore at Nobles who loves programming and math. Outside of robotics, I enjoy a good fantasy book :)",
       imageSrc: "/team/2024-2025/students/DEREK_YIN.jpg?height=400&width=400",
     },
     {
       id: 4,
       name: "Alex Cai",
       role: "Hardware",
-      description: "",
+      description: "Alex is a sophomore at Nobles.",
       imageSrc: "/team/2024-2025/students/ALEX_CAI.jpg?height=400&width=400",
     },
     {
       id: 5,
       name: "Raphael Klauber",
       role: "Hardware",
-      description: "",
+      description: "Raphael is a sophomore at Nobles.",
       imageSrc: "/team/2024-2025/students/RAPHAEL_KLAUBER.jpg?height=400&width=400",
     },
     {
       id: 6,
       name: "Jayden Leung",
-      role: "Documentation",
-      description: "",
+      role: "Software/Documentation",
+      description: "Jayden is a sophomore at Nobles.",
       imageSrc: "/team/2024-2025/students/JAYDEN_LEUNG.jpg?height=400&width=400",
     },
     {
       id: 7,
       name: "Kenny Chukwu",
       role: "Software",
-      description: "",
+      description: "Kenny is a sophomore at Nobles.",
       imageSrc: "/team/2024-2025/students/JESSE_CHUKWU.jpg?height=400&width=400",
     },
   ]
@@ -86,9 +86,9 @@ export default function AboutUs() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-[#0e6fb9] mb-8">Our Team</h2>
           <p className="text-lg text-[#044a90] mb-8 max-w-4xl">
-            We are a dedicated group of mentors and students working together to achieve excellence in our field. Our
-            diverse team brings together a wide range of skills and perspectives, allowing us to tackle complex
-            challenges and develop innovative solutions.
+            Our team consists of high school and middle school students from Noble and Greenough School.
+            We have many diverse interests and we use our wide range of skills to build robots and learn more about engineering and software development.
+            Our mentors are dedicated faculty members who guide us through the process of building and programming our robots and support us at every step.
           </p>
         </section>
 
@@ -98,8 +98,14 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {mentors.map((mentor) => (
               <div key={mentor.id} className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
-                <div className="md:w-1/3 relative h-64 md:h-auto">
-                  <Image src={mentor.imageSrc || "/placeholder.svg"} alt={mentor.name} fill className="object-cover" />
+                <div className="md:w-1/3 relative aspect-square">
+                  <Image
+                      src={mentor.imageSrc || "/placeholder.svg"}
+                      alt={mentor.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover"
+                  />
                 </div>
                 <div className="md:w-2/3 p-6">
                   <div className="flex justify-between items-start mb-2">
@@ -121,12 +127,13 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {students.map((student) => (
               <div key={student.id} className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
-                <div className="md:w-1/3 relative h-64 md:h-auto">
+                <div className="md:w-1/3 relative aspect-square">
                   <Image
-                    src={student.imageSrc || "/placeholder.svg"}
-                    alt={student.name}
-                    fill
-                    className="object-cover"
+                      src={student.imageSrc || "/placeholder.svg"}
+                      alt={student.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover"
                   />
                 </div>
                 <div className="md:w-2/3 p-6">
