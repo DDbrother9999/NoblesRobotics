@@ -14,16 +14,14 @@ export default function AboutUs() {
       id: 1,
       name: "Max Montgomery",
       role: "Faculty Mentor",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      description: "",
       imageSrc: "/team/2024-2025/mentors/Montgomery.jpg?height=400&width=400",
     },
     {
       id: 2,
       name: "Andrew Shumway",
       role: "Faculty Mentor",
-      description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      description: "",
       imageSrc: "/team/2024-2025/mentors/Shumway.jpg?height=400&width=400",
     },
   ]
@@ -33,56 +31,49 @@ export default function AboutUs() {
       id: 1,
       name: "Jeffrey Liu",
       role: "Team Captain",
-      description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      description: "",
       imageSrc: "/team/2024-2025/students/JEFFREY_LIU.jpg?height=400&width=400",
     },
     {
       id: 2,
       name: "George Pinkas",
       role: "Hardware",
-      description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      description: "",
       imageSrc: "/team/2024-2025/students/GEORGE_PINKAS.jpg?height=400&width=400",
     },
     {
       id: 3,
       name: "Derek Yin",
       role: "Software",
-      description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      description: "",
       imageSrc: "/team/2024-2025/students/DEREK_YIN.jpg?height=400&width=400",
     },
     {
       id: 4,
       name: "Alex Cai",
       role: "Hardware",
-      description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      description: "",
       imageSrc: "/team/2024-2025/students/ALEX_CAI.jpg?height=400&width=400",
     },
     {
       id: 5,
       name: "Raphael Klauber",
       role: "Hardware",
-      description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      description: "",
       imageSrc: "/team/2024-2025/students/RAPHAEL_KLAUBER.jpg?height=400&width=400",
     },
     {
       id: 6,
       name: "Jayden Leung",
       role: "Documentation",
-      description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      description: "",
       imageSrc: "/team/2024-2025/students/JAYDEN_LEUNG.jpg?height=400&width=400",
     },
     {
       id: 7,
       name: "Kenny Chukwu",
       role: "Software",
-      description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id pharetra lacus. Sed consectetur ultricies justo, in viverra enim tincidunt condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      description: "",
       imageSrc: "/team/2024-2025/students/JESSE_CHUKWU.jpg?height=400&width=400",
     },
   ]
