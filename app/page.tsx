@@ -59,14 +59,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#f5faff] py-16">
-        <div className="container mx-auto px-4">
-          <blockquote className="text-center">
-            <p className="mb-6 text-2xl italic text-[#044a90] md:text-3xl">{'"George your blurb goes here"'}</p>
-            <footer className="text-lg text-[#0e6fb9]">— George</footer>
-          </blockquote>
-        </div>
-      </section>
+      {/*<section className="bg-[#f5faff] py-16">*/}
+      {/*  <div className="container mx-auto px-4">*/}
+      {/*    <blockquote className="text-center">*/}
+      {/*      <p className="mb-6 text-2xl italic text-[#044a90] md:text-3xl">{'"George your blurb goes here"'}</p>*/}
+      {/*      <footer className="text-lg text-[#0e6fb9]">— George</footer>*/}
+      {/*    </blockquote>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
 
       <section className="bg-[#90e0f4]/20 py-16">
         <div className="container mx-auto px-4">
