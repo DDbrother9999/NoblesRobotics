@@ -8,7 +8,7 @@ type TimelineEventProps = {
   title: string
   date: string
   description: string
-  images?: string[] // Array of image sources
+  images?: string[]
   videoSrc?: string
   isLeft?: boolean
   index: number
@@ -51,36 +51,38 @@ export default function TimelineEvent({
   return (
     <motion.div
       ref={ref}
-      className={`w-full max-w-3xl mx-auto mb-8 ${isLeft ? "md:mr-auto md:ml-0" : "md:ml-auto md:mr-0"}`}
+      className={`mx-auto mb-8 w-full max-w-3xl ${isLeft ? "md:ml-0 md:mr-auto" : "md:ml-auto md:mr-0"}`}
       variants={variants}
       initial="hidden"
       animate={hasPlayed ? "visible" : "hidden"}
     >
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="overflow-hidden rounded-lg bg-white shadow-lg">
         <div className="p-3 md:p-4">
-          <div className="flex justify-between items-center mb-2">
+          <div className="mb-2 flex items-center justify-between">
             <h3 className="text-lg font-bold text-[#044a90]">{title}</h3>
             <span className="text-xs font-medium text-[#0e6fb9]">{date}</span>
           </div>
 
-          {/* Multiple Images Gallery */}
           {images.length > 0 && (
             <div className="mb-3">
               {images.length === 1 ? (
-                // Single image
                 <div className="relative h-40 md:h-56">
-                  <Image src={images[0] || "/placeholder.svg"} alt={title} fill className="object-cover rounded" />
+                  <Image
+                    src={images[0] || "/placeholder.svg?height=400&width=600&query=event"}
+                    alt={title}
+                    fill
+                    className="rounded object-cover"
+                  />
                 </div>
               ) : (
-                // Multiple images grid
                 <div className="grid grid-cols-2 gap-2">
                   {images.map((image, i) => (
                     <div key={i} className="relative h-32 md:h-36">
                       <Image
-                        src={image || "/placeholder.svg"}
+                        src={image || "/placeholder.svg?height=300&width=300&query=event"}
                         alt={`${title} - Image ${i + 1}`}
                         fill
-                        className="object-cover rounded"
+                        className="rounded object-cover"
                       />
                     </div>
                   ))}
@@ -89,10 +91,9 @@ export default function TimelineEvent({
             </div>
           )}
 
-          {/* Video */}
           {videoSrc && (
-            <div className="mb-3 relative h-40 md:h-56">
-              <video src={videoSrc} controls className="w-full h-full object-cover rounded" />
+            <div className="relative mb-3 h-40 md:h-56">
+              <video src={videoSrc} controls className="h-full w-full rounded object-cover" />
             </div>
           )}
 
@@ -102,4 +103,3 @@ export default function TimelineEvent({
     </motion.div>
   )
 }
-

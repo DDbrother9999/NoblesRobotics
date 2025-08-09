@@ -34,15 +34,15 @@ export default function AccomplishmentsPage() {
           id: 1,
           title: "Control Award",
           date: "2021-2022 Season",
-          description:
-            "For our first award, we won the Control Award for our innovative robot design and programming.",
+          description: "For our first award, we won the Control Award for our innovative robot design and programming.",
           images: ["/placeholder.svg?height=400&width=600", "/placeholder.svg?height=400&width=600"],
         },
         {
           id: 2,
           title: "Regional Qualifier - Winning Alliance",
           date: "2021-2022 Season",
-          description: "We won the regional qualifier, securing our spot in the state championship in the 2021-2022 season.",
+          description:
+            "We won the regional qualifier, securing our spot in the state championship in the 2021-2022 season.",
           images: [
             "/placeholder.svg?height=400&width=600",
             "/placeholder.svg?height=400&width=600",
@@ -69,7 +69,8 @@ export default function AccomplishmentsPage() {
           id: 5,
           title: "Regional Qualifier - Finalist Alliance",
           date: "2022-2023 Season",
-          description: "Though we did not qualify for the state tournament this year, our robot performed its best, placing us on the finalist alliance.",
+          description:
+            "Though we did not qualify for the state tournament this year, our robot performed its best, placing us on the finalist alliance.",
           images: ["/placeholder.svg?height=400&width=600"],
         },
       ])
@@ -115,7 +116,7 @@ export default function AccomplishmentsPage() {
           date: "January 2025",
           description:
             "Defended our regional title with another first-place finish, demonstrating our continued growth and improvement.",
-          images: ["/control_award_24_25.JPG?height=400&width=600"],
+          images: ["/placeholder.svg?height=400&width=600"],
         },
         {
           id: 4,
@@ -150,23 +151,23 @@ export default function AccomplishmentsPage() {
   }, [year])
 
   return (
-    <main className="min-h-screen py-12 bg-[#f5faff]">
+    <main className="min-h-screen bg-[#f5faff] py-12">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center text-[#044a90] mb-4">Accomplishments</h1>
-        <h2 className="text-2xl font-bold text-center text-[#0e6fb9] mb-12">{year}</h2>
+        <h1 className="mb-4 text-center text-4xl font-bold text-[#044a90]">Accomplishments</h1>
+        <h2 className="mb-12 text-center text-2xl font-bold text-[#0e6fb9]">{year}</h2>
 
-        <section className="mb-16 bg-white rounded-lg shadow-lg p-8">
-          <h3 className="text-2xl font-bold text-[#044a90] mb-6">At a Glance</h3>
+        <section className="mb-16 rounded-lg bg-white p-8 shadow-lg">
+          <h3 className="mb-6 text-2xl font-bold text-[#044a90]">At a Glance</h3>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             <div>
-              <h4 className="text-xl font-bold text-[#0e6fb9] mb-4">Awards</h4>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <h4 className="mb-4 text-xl font-bold text-[#0e6fb9]">Awards</h4>
+              <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
                 {awards.map((award) => (
                   <div key={award.id} className="flex flex-col items-center">
-                    <div className="relative w-full aspect-square mb-2">
+                    <div className="relative mb-2 aspect-square w-full">
                       <Image
-                        src={award.imageSrc || "/placeholder.svg"}
+                        src={award.imageSrc || "/placeholder.svg?height=300&width=300&query=award"}
                         alt={award.name}
                         fill
                         className="object-contain"
@@ -178,18 +179,21 @@ export default function AccomplishmentsPage() {
               </div>
             </div>
 
-            {/* Final Robot */}
             <div>
-              <h4 className="text-xl font-bold text-[#0e6fb9] mb-4">Our Robot</h4>
-              <div className="relative w-full aspect-square">
-                <Image src={robotImage || "/placeholder.svg"} alt={`${year} Robot`} fill className="object-contain" />
+              <h4 className="mb-4 text-xl font-bold text-[#0e6fb9]">Our Robot</h4>
+              <div className="relative aspect-square w-full">
+                <Image
+                  src={robotImage || "/placeholder.svg?height=600&width=600&query=robot"}
+                  alt={`${year} Robot`}
+                  fill
+                  className="object-contain"
+                />
               </div>
             </div>
           </div>
         </section>
 
-        {/* Timeline Section */}
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative mx-auto max-w-4xl">
           {accomplishments.map((accomplishment, index) => (
             <TimelineEvent
               key={accomplishment.id}
@@ -207,4 +211,3 @@ export default function AccomplishmentsPage() {
     </main>
   )
 }
-
