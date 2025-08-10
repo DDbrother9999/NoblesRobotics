@@ -32,17 +32,17 @@ export default function AccomplishmentsPage() {
       setAccomplishments([
         {
           id: 1,
-          title: "Control Award",
-          date: "2021-2022 Season",
-          description: "For our first award, we won the Control Award for our innovative robot design and programming.",
+          title: "Kickoff",
+          date: "2024 Centerstage",
+          description: "",
           images: ["/placeholder.svg?height=400&width=600", "/placeholder.svg?height=400&width=600"],
         },
         {
           id: 2,
-          title: "Regional Qualifier - Winning Alliance",
-          date: "2021-2022 Season",
+          title: "Motivate Award",
+          date: "2024 Centerstage",
           description:
-            "We won the regional qualifier, securing our spot in the state championship in the 2021-2022 season.",
+            "",
           images: [
             "/placeholder.svg?height=400&width=600",
             "/placeholder.svg?height=400&width=600",
@@ -51,44 +51,28 @@ export default function AccomplishmentsPage() {
           ],
         },
         {
-          id: 3,
-          title: "Control Award",
-          date: "2022-2023 Season",
-          description: "We won the Control Award for our innovative robot design and programming.",
-          images: ["/placeholder.svg?height=400&width=600"],
-        },
-        {
-          id: 4,
-          title: "Control Award",
-          date: "2022-2023 Season",
+          id: 2,
+          title: "Finalist Alliance Captain & Control Award Winner",
+          date: "2024 Centerstage",
           description:
-            "We won a second Control Award during the 2022-2023 season for our innovative robot design and programming.",
-          images: ["/placeholder.svg?height=400&width=600", "/placeholder.svg?height=400&width=600"],
-        },
-        {
-          id: 5,
-          title: "Regional Qualifier - Finalist Alliance",
-          date: "2022-2023 Season",
-          description:
-            "Though we did not qualify for the state tournament this year, our robot performed its best, placing us on the finalist alliance.",
-          images: ["/placeholder.svg?height=400&width=600"],
+              "",
+          images: [
+            "/placeholder.svg?height=400&width=600",
+            "/placeholder.svg?height=400&width=600",
+            "/placeholder.svg?height=400&width=600",
+            "/placeholder.svg?height=400&width=600",
+          ],
         },
       ])
-
       setAwards([
         {
           id: 1,
-          name: "First Place Regional",
+          name: "Motivate Award",
           imageSrc: "/placeholder.svg?height=300&width=300",
         },
         {
           id: 2,
-          name: "Innovation Award",
-          imageSrc: "/placeholder.svg?height=300&width=300",
-        },
-        {
-          id: 3,
-          name: "National 3rd Place",
+          name: "Control Award",
           imageSrc: "/placeholder.svg?height=300&width=300",
         },
       ])
@@ -98,32 +82,23 @@ export default function AccomplishmentsPage() {
       setAccomplishments([
         {
           id: 1,
-          title: "New Season Kickoff",
-          date: "September 2024",
+          title: "Kickoff",
+          date: "2024 Into The Deep",
           description: "Started the new season with an expanded team and ambitious goals for the year ahead.",
           images: ["/placeholder.svg?height=400&width=600"],
         },
         {
           id: 2,
           title: "FTC Think Award",
-          date: "November 2024",
-          description: "Recognized for technical excellence at the fall showcase event.",
+          date: "2024 Into The Deep",
+          description: "",
           images: ["/placeholder.svg?height=400&width=600", "/placeholder.svg?height=400&width=600"],
         },
         {
           id: 3,
           title: "FTC Control Award",
-          date: "January 2025",
-          description:
-            "Defended our regional title with another first-place finish, demonstrating our continued growth and improvement.",
-          images: ["/placeholder.svg?height=400&width=600"],
-        },
-        {
-          id: 4,
-          title: "International Invitation",
-          date: "February 2025",
-          description:
-            "Received a special invitation to participate in an international exhibition, representing our country on the global stage.",
+          date: "2024 Into The Deep",
+          description: "",
           images: ["/placeholder.svg?height=400&width=600"],
         },
       ])
@@ -131,17 +106,12 @@ export default function AccomplishmentsPage() {
       setAwards([
         {
           id: 1,
-          name: "Technical Excellence",
+          name: "Think Award",
           imageSrc: "/placeholder.svg?height=300&width=300",
         },
         {
           id: 2,
-          name: "Regional 1st Place",
-          imageSrc: "/placeholder.svg?height=300&width=300",
-        },
-        {
-          id: 3,
-          name: "International Recognition",
+          name: "Control Award",
           imageSrc: "/placeholder.svg?height=300&width=300",
         },
       ])

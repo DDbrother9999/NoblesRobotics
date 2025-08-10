@@ -23,7 +23,7 @@ export default function Header() {
           <div className="flex items-center">
             <div className="relative mr-3 h-10 w-10">
               <Image
-                src="/placeholder.svg?height=40&width=40"
+                src="/logo.svg?height=40&width=40"
                 alt="Nobles Robotics"
                 width={40}
                 height={40}

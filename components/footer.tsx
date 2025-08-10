@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 justify-items-center gap-x-16 gap-y-8 md:grid-cols-2">
             <div className="flex h-full flex-col items-center justify-start">
               <div className="relative mb-4 h-40 w-40">
-                <Image src="/placeholder.svg?height=200&width=200" alt="Team Logo" fill className="object-contain" />
+                <Image src="/logo.svg?height=200&width=200" alt="Team Logo" fill className="object-contain" />
               </div>
 
               <div className="mt-2 text-center">

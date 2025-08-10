@@ -19,7 +19,7 @@ export default function Home() {
     {
       question: "What is FTC Robotics?",
       answer:
-        "First Tech Challenge (FTC) is a robotics competition for middle and high school students. Teams design, build, and program robots to compete in a series of challenges. Learn more about this years challenge here: <a href='https://www.firstinspires.org/robotics/ftc'>https://www.firstinspires.org/robotics/ftc</a>.",
+        "First Tech Challenge (FTC) is a robotics competition for middle and high school students. Teams design, build, and program robots to compete in a series of challenges. Learn more about this year's challenge here: <a href='https://www.firstinspires.org/robotics/ftc'>https://www.firstinspires.org/robotics/ftc</a>.",
     },
   ]
 
@@ -35,7 +35,7 @@ export default function Home() {
     <main className="min-h-screen">
       <section className="relative h-screen overflow-hidden">
         <div className={`absolute inset-0 transition-opacity duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}>
-          <Image src="/placeholder-pryeq.png" alt="Team Hero Image" fill className="object-cover" priority />
+          <Image src="/robotics-homepage.jpg?height=1080&width=1920" alt="Team Hero Image" fill className="object-cover" priority />
         </div>
         <div className="absolute inset-0 flex items-end bg-gradient-to-b from-transparent to-[#044a90]/80 pb-24 md:pb-32">
           <div className="container mx-auto px-4">
@@ -76,7 +76,7 @@ export default function Home() {
             <Link href="/about-us">
               <div className="h-full overflow-hidden rounded-lg bg-white shadow-lg transition-transform hover:scale-105">
                 <div className="relative h-48">
-                  <Image src="/students-mentors-group.png" alt="About Us" fill className="object-cover" />
+                  <Image src="/index/about-us.jpg?height=400&width=600" alt="About Us" fill className="object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="mb-2 text-xl font-bold text-[#044a90]">About Us</h3>
@@ -90,7 +90,7 @@ export default function Home() {
             <Link href="/accomplishments/2023-2024">
               <div className="h-full overflow-hidden rounded-lg bg-white shadow-lg transition-transform hover:scale-105">
                 <div className="relative h-48">
-                  <Image src="/placeholder-n2v34.png" alt="Accomplishments" fill className="object-cover" />
+                  <Image src="/index/accomplishments.jpg?height=400&width=600" alt="Accomplishments" fill className="object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="mb-2 text-xl font-bold text-[#044a90]">Accomplishments</h3>
@@ -102,7 +102,7 @@ export default function Home() {
             <Link href="/sponsors">
               <div className="h-full overflow-hidden rounded-lg bg-white shadow-lg transition-transform hover:scale-105">
                 <div className="relative h-48">
-                  <Image src="/company-logos-grid.png" alt="Sponsors" fill className="object-cover" />
+                  <Image src="/index/sponsors.jpg?height=400&width=600" alt="Sponsors" fill className="object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="mb-2 text-xl font-bold text-[#044a90]">Sponsors</h3>
