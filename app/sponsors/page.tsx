@@ -17,7 +17,7 @@ export default function SponsorsPage() {
       tier: "silver",
       imageSrc: "/sponsors/jukebox.jpg?height=300&width=300",
       description:
-          "Thank you so much Jukebox for the coolest [custom stickers](https://www.jukeboxprint.com/custom-stickers).",
+          "Thank you so much Jukebox for the coolest [custom stickers](https://www.jukeboxprint.com/custom-stickers)!",
     },
   ]
 
