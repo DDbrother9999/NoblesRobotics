@@ -41,7 +41,7 @@ export default function Header() {
                 Home
               </Link>
               <Link
-                href="/accomplishments"
+                href="/about-us"
                 onClick={handleNavClick}
                 className="font-medium transition-colors hover:text-[#90e0f4]"
               >

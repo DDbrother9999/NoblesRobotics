@@ -4,6 +4,8 @@ import { useEffect, useState } from "react"
 import { useParams } from "next/navigation"
 import TimelineEvent from "@/components/timeline-event"
 
+//TODO: standarize image types + minify/optimize them for web display
+
 type Accomplishment = {
   id: number
   title: string
