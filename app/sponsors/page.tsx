@@ -19,6 +19,14 @@ export default function SponsorsPage() {
       description:
           "Thank you so much Jukebox for the coolest [custom stickers](https://www.jukeboxprint.com/custom-stickers)!",
     },
+    {
+      id: 2,
+      name: "Gene Haas Foundation",
+      tier: "platinum",
+      imageSrc: "/sponsors/GHF.png?height=300&width=300",
+      description:
+          "Thank you so much [Gene Haas Foundation](https://www.ghaasfoundation.org/) for your support! We are incredibly grateful for your generosity and support!",
+    },
   ]
 
   const tierColors = {
@@ -98,7 +106,7 @@ export default function SponsorsPage() {
           <section className="mb-16">
             <div className="rounded-lg bg-white p-6 text-center shadow-lg">
               <h2 className="mb-4 text-2xl font-bold text-[#044a90]">More Information Coming Soon</h2>
-              <p className="text-lg text-[#0e6fb9]">Sponsorship tiers and details will be added here soon :)</p>
+              <p className="text-lg text-[#0e6fb9]">Sponsorship tiers and details coming soon!</p>
             </div>
           </section>
         </div>

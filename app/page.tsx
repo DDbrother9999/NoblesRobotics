@@ -73,7 +73,7 @@ export default function Home() {
           <h2 className="mb-12 text-center text-3xl font-bold text-[#044a90]">Explore Our Journey</h2>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <Link href="/about-us">
+            <Link href="/accomplishments">
               <div className="h-full overflow-hidden rounded-lg bg-white shadow-lg transition-transform hover:scale-105">
                 <div className="relative h-48">
                   <Image src="/index/about-us.jpg?height=400&width=600" alt="About Us" fill className="object-cover" />

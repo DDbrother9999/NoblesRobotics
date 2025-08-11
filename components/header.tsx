@@ -41,7 +41,7 @@ export default function Header() {
                 Home
               </Link>
               <Link
-                href="/about-us"
+                href="/accomplishments"
                 onClick={handleNavClick}
                 className="font-medium transition-colors hover:text-[#90e0f4]"
               >
@@ -97,7 +97,7 @@ export default function Header() {
               Home
             </Link>
             <Link
-              href="/about-us"
+              href="/accomplishments"
               className="font-medium transition-colors hover:text-[#90e0f4]"
               onClick={handleNavClick}
             >
