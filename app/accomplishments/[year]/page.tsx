@@ -90,7 +90,7 @@ export default function AccomplishmentsPage() {
           title: "Kickoff",
           date: "2024 Into The Deep",
           description: "",
-          images: ["/about-us/2024-2025/intothedeep.jpg?height=250&width=400"],
+          images: ["/accomplishments/2024-2025/intothedeep.jpg?height=250&width=400"],
         },
         {
           id: 2,
@@ -98,10 +98,10 @@ export default function AccomplishmentsPage() {
           date: "2024 Into The Deep",
           description: "",
           images: [
-            "/about-us/2024-2025/comp0.JPG?height=500&width=500",
-            "/about-us/2024-2025/students0.JPG?height=200&width=200",
-            "/about-us/2024-2025/students1.JPG?height=200&width=200",
-            "/about-us/2024-2025/students2.JPG?height=200&width=200",
+            "/accomplishments/2024-2025/comp0.JPG?height=500&width=500",
+            "/accomplishments/2024-2025/students0.JPG?height=200&width=200",
+            "/accomplishments/2024-2025/students1.JPG?height=200&width=200",
+            "/accomplishments/2024-2025/students2.JPG?height=200&width=200",
           ],
         },
         {
@@ -110,10 +110,10 @@ export default function AccomplishmentsPage() {
           date: "2024 Into The Deep",
           description: "",
           images: [
-            "/about-us/2024-2025/control.JPG?height=500&width=500",
-            "/about-us/2024-2025/students3.JPG?height=200&width=200",
-            "/about-us/2024-2025/students4.JPG?height=200&width=200",
-            "/about-us/2024-2025/students5.JPG?height=200&width=200",
+            "/accomplishments/2024-2025/control.JPG?height=500&width=500",
+            "/accomplishments/2024-2025/students3.JPG?height=200&width=200",
+            "/accomplishments/2024-2025/students4.JPG?height=200&width=200",
+            "/accomplishments/2024-2025/students5.JPG?height=200&width=200",
           ],
         },
       ])
@@ -122,12 +122,12 @@ export default function AccomplishmentsPage() {
         {
           id: 1,
           name: "MA Brookline Robo Rally - Think Award",
-          imageSrc: "/about-us/2024-2025/control.JPG",
+          imageSrc: "/accomplishments/2024-2025/control.JPG",
         },
         {
           id: 2,
           name: "MA Hawk Nest Havoc! Xaverian Qualifier - Control Award",
-          imageSrc: "/about-us/2024-2025/robot.JPG",
+          imageSrc: "/accomplishments/2024-2025/robot.JPG",
         },
       ])
     }
@@ -167,7 +167,7 @@ export default function AccomplishmentsPage() {
                       <h4 className="font-semibold text-[#0e6fb9] mb-4">Robot {year}</h4>
                       <div className="flex justify-center">
                         <img
-                            src={`/about-us/${year}/robot.JPG`}
+                            src={`/accomplishments/${year}/robot.JPG`}
                             alt={`Robot ${year}`}
                             className="rounded-lg shadow-md max-w-full h-auto"
                             style={{ maxHeight: "300px" }}
