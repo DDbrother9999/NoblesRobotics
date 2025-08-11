@@ -34,12 +34,12 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/accomplishments" className="transition-colors hover:text-[#90e0f4]">
+                  <Link href="/about-us" className="transition-colors hover:text-[#90e0f4]">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/accomplishments/2023-2024" className="transition-colors hover:text-[#90e0f4]">
+                  <Link href="/accomplishments/2024-2025" className="transition-colors hover:text-[#90e0f4]">
                     Accomplishments
                   </Link>
                 </li>
