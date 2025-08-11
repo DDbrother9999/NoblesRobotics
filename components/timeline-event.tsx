@@ -1,105 +1,104 @@
 "use client"
 
-import { useRef, useEffect, useState } from "react"
 import Image from "next/image"
-import { motion, useInView } from "framer-motion"
+import { useState } from "react"
 
-type TimelineEventProps = {
-  title: string
-  date: string
-  description: string
-  images?: string[]
-  videoSrc?: string
-  isLeft?: boolean
-  index: number
+interface TimelineEventProps {
+    title: string
+    date: string
+    description: string
+    images?: string[]
+    videoSrc?: string
+    isLeft: boolean
+    index: number
+}
+
+function getImageDimensions(imageSrc: string) {
+    const url = new URL(imageSrc, window.location.origin)
+    const width = Number.parseInt(url.searchParams.get("width") || "200")
+    const height = Number.parseInt(url.searchParams.get("height") || "200")
+    return { width, height }
 }
 
 export default function TimelineEvent({
-  title,
-  date,
-  description,
-  images = [],
-  videoSrc,
-  isLeft = false,
-  index,
-}: TimelineEventProps) {
-  const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
-  const [hasPlayed, setHasPlayed] = useState(false)
+                                          title,
+                                          date,
+                                          description,
+                                          images = [],
+                                          videoSrc,
+                                          isLeft,
+                                          index,
+                                      }: TimelineEventProps) {
+    const [imageLoaded, setImageLoaded] = useState<{ [key: number]: boolean }>({})
 
-  useEffect(() => {
-    if (isInView && !hasPlayed) {
-      setHasPlayed(true)
+    const handleImageLoad = (imageIndex: number) => {
+        setImageLoaded((prev) => ({ ...prev, [imageIndex]: true }))
     }
-  }, [isInView, hasPlayed])
 
-  const variants = {
-    hidden: {
-      opacity: 0,
-      x: isLeft ? -50 : 50,
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.6,
-        delay: index * 0.2,
-      },
-    },
-  }
+    return (
+        <div className={`relative flex items-center mb-12 ${isLeft ? "justify-start" : "justify-end"}`}>
+            {/* Content - expanded to use more horizontal space */}
+            <div className={`w-full max-w-2xl ${isLeft ? "pr-0" : "pl-0"}`}>
+                <div className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-[#044a90]">
+                    <h3 className={`text-xl font-bold text-[#044a90] mb-2 ${isLeft ? "text-left" : "text-right"}`}>{title}</h3>
+                    <p className={`text-[#0e6fb9] font-semibold mb-3 ${isLeft ? "text-left" : "text-right"}`}>{date}</p>
 
-  return (
-    <motion.div
-      ref={ref}
-      className={`mx-auto mb-8 w-full max-w-3xl ${isLeft ? "md:ml-0 md:mr-auto" : "md:ml-auto md:mr-0"}`}
-      variants={variants}
-      initial="hidden"
-      animate={hasPlayed ? "visible" : "hidden"}
-    >
-      <div className="overflow-hidden rounded-lg bg-white shadow-lg">
-        <div className="p-3 md:p-4">
-          <div className="mb-2 flex items-center justify-between">
-            <h3 className="text-lg font-bold text-[#044a90]">{title}</h3>
-            <span className="text-xs font-medium text-[#0e6fb9]">{date}</span>
-          </div>
+                    {description && (
+                        <p className={`text-gray-700 mb-4 leading-relaxed ${isLeft ? "text-left" : "text-right"}`}>{description}</p>
+                    )}
 
-          {images.length > 0 && (
-            <div className="mb-3">
-              {images.length === 1 ? (
-                <div className="relative h-40 md:h-56">
-                  <Image
-                    src={images[0] || "/placeholder.svg?height=400&width=600&query=event"}
-                    alt={title}
-                    fill
-                    className="rounded object-cover"
-                  />
+                    {images.length > 0 && (
+                        <div className="flex flex-wrap gap-2">
+                            {images.map((imageSrc, imageIndex) => {
+                                const { width, height } = getImageDimensions(imageSrc)
+
+                                return (
+                                    <div key={imageIndex} className="relative">
+                                        <div
+                                            className={`relative transition-all duration-300 ${
+                                                imageLoaded[imageIndex] ? "opacity-100" : "opacity-0"
+                                            }`}
+                                            style={{
+                                                width: `${width}px`,
+                                                height: `${height}px`,
+                                            }}
+                                        >
+                                            <Image
+                                                src={imageSrc || "/placeholder.svg"}
+                                                alt={`${title} - Image ${imageIndex + 1}`}
+                                                width={width}
+                                                height={height}
+                                                className="w-full h-full object-cover rounded-lg"
+                                                onLoad={() => handleImageLoad(imageIndex)}
+                                            />
+                                        </div>
+                                        {!imageLoaded[imageIndex] && (
+                                            <div
+                                                className="absolute inset-0 bg-gray-100 rounded-lg flex items-center justify-center"
+                                                style={{
+                                                    width: `${width}px`,
+                                                    height: `${height}px`,
+                                                }}
+                                            >
+                                                <div className="animate-pulse text-gray-400 text-xs">Loading...</div>
+                                            </div>
+                                        )}
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    )}
+
+                    {/* Video */}
+                    {videoSrc && (
+                        <div className="mt-4">
+                            <video src={videoSrc} controls className="w-full rounded-lg" style={{ maxHeight: "400px" }}>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    )}
                 </div>
-              ) : (
-                <div className="grid grid-cols-2 gap-2">
-                  {images.map((image, i) => (
-                    <div key={i} className="relative h-32 md:h-36">
-                      <Image
-                        src={image || "/placeholder.svg?height=300&width=300&query=event"}
-                        alt={`${title} - Image ${i + 1}`}
-                        fill
-                        className="rounded object-cover"
-                      />
-                    </div>
-                  ))}
-                </div>
-              )}
             </div>
-          )}
-
-          {videoSrc && (
-            <div className="relative mb-3 h-40 md:h-56">
-              <video src={videoSrc} controls className="h-full w-full rounded object-cover" />
-            </div>
-          )}
-
-          <p className="text-sm text-[#0e6fb9]">{description}</p>
         </div>
-      </div>
-    </motion.div>
-  )
+    )
 }
