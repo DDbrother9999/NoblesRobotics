@@ -27,6 +27,14 @@ export default function SponsorsPage() {
       description:
           "Thank you so much [Gene Haas Foundation](https://www.ghaasfoundation.org/) for your support! We are incredibly grateful for your generosity and support!",
     },
+    {
+      id: 3,
+      name: "Polymaker",
+      tier: "bronze",
+      imageSrc: "/sponsors/polymaker.png?height=300&width=300",
+      description:
+          "Thank you so much [Polymaker](https://us.polymaker.com/) for the free filament!",
+    },
   ]
 
   const tierColors = {
