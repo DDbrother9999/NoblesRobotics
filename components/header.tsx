@@ -47,23 +47,23 @@ export default function Header() {
               >
                 About Us
               </Link>
-              <DropdownMenu>
+                <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center font-medium transition-colors hover:text-[#90e0f4]">
                   Accomplishments <ChevronDown className="ml-1 h-4 w-4" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="border-[#4eb5e9] bg-[#0e6fb9] text-[#f5faff]">
                   <DropdownMenuItem className="cursor-pointer hover:bg-[#4eb5e9]">
-                    <Link href="/accomplishments/2023-2024" onClick={handleNavClick} className="w-full">
-                      2023-2024
-                    </Link>
+                  <Link href="/accomplishments/2023-2024" onClick={handleNavClick} className="block w-full">
+                    2023-2024
+                  </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="cursor-pointer hover:bg-[#4eb5e9]">
-                    <Link href="/accomplishments/2024-2025" onClick={handleNavClick} className="w-full">
-                      2024-2025
-                    </Link>
+                  <Link href="/accomplishments/2024-2025" onClick={handleNavClick} className="block w-full">
+                    2024-2025
+                  </Link>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
-              </DropdownMenu>
+                </DropdownMenu>
               <Link
                 href="/sponsors"
                 onClick={handleNavClick}
@@ -114,7 +114,7 @@ export default function Header() {
               >
                 Accomplishments <ChevronDown className="ml-1 h-4 w-4" />
               </button>
-              <div className="ml-4 mt-2 hidden flex-col space-y-2">
+              <div className="ml-4 mt-2 hidden flex flex-col space-y-2">
                 <Link
                   href="/accomplishments/2023-2024"
                   className="font-medium transition-colors hover:text-[#90e0f4]"

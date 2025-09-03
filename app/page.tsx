@@ -17,10 +17,35 @@ export default function Home() {
 
   const faqs: FAQ[] = [
     {
+      question: "How can I support Nobles Robotics?",
+      answer:
+        "You can support Nobles Robotics by attending our events, sponsoring the team, or spreading the word about our program. Donations and mentorship opportunities are also greatly appreciated! We are always looking for sponsors to support our nonprofit team.",
+    },
+    {
       question: "What is FTC Robotics?",
       answer:
         "First Tech Challenge (FTC) is a robotics competition for middle and high school students. Teams design, build, and program robots to compete in a series of challenges. Learn more about this year's challenge here: <a href='https://www.firstinspires.org/robotics/ftc'>https://www.firstinspires.org/robotics/ftc</a>.",
     },
+    {
+      question: "Who can join Nobles Robotics?",
+      answer:
+        "Nobles Robotics is open to all high school students at Noble and Greenough School who are interested in robotics, programming, or engineering. No prior experience is required!",
+    },
+    {
+      question: "What skills can I learn in FTC?",
+      answer:
+        "In FTC, you can learn a variety of skills including programming, mechanical design, electrical engineering, teamwork, and problem-solving. You'll also gain experience in project management and communication.",
+    },
+    {
+      question: "How often does the team meet?",
+      answer:
+        "The team typically meets several times a week during the competition season, which runs from September to February. Additional meetings may be scheduled as needed closer to competitions.",
+    },
+    {
+      question: "What is the competition season like?",
+      answer:
+        "The competition season begins with the release of the annual challenge in September. Teams then design, build, and program their robots to complete the challenge. Competitions usually take place from November to February, culminating in regional and national championships.",
+    }
   ]
 
   useEffect(() => {
@@ -73,7 +98,7 @@ export default function Home() {
           <h2 className="mb-12 text-center text-3xl font-bold text-[#044a90]">Explore Our Journey</h2>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <Link href="/accomplishments">
+            <Link href="/about-us">
               <div className="h-full overflow-hidden rounded-lg bg-white shadow-lg transition-transform hover:scale-105">
                 <div className="relative h-48">
                   <Image src="/index/about-us.jpg?height=400&width=600" alt="About Us" fill className="object-cover" />
@@ -87,7 +112,7 @@ export default function Home() {
               </div>
             </Link>
 
-            <Link href="/accomplishments/2023-2024">
+            <Link href="/accomplishments/2024-2025">
               <div className="h-full overflow-hidden rounded-lg bg-white shadow-lg transition-transform hover:scale-105">
                 <div className="relative h-48">
                   <Image src="/index/accomplishments.jpg?height=400&width=600" alt="Accomplishments" fill className="object-cover" />
