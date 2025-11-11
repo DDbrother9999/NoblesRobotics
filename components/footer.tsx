@@ -17,10 +17,10 @@ export default function Footer() {
                 <p className="font-bold">{"© Nobles Robotics"}</p>
                 <p className="mt-1 text-sm">10 Campus Dr, Dedham, MA 02026</p>
                 <a
-                  href="mailto:noblesrobotics@gmail.com"
+                  href="mailto:team@noblesrobotics.com"
                   className="mt-1 block text-sm transition-colors hover:text-[#90e0f4]"
                 >
-                  noblesrobotics@gmail.com
+                  team@noblesrobotics.com
                 </a>
               </div>
             </div>
